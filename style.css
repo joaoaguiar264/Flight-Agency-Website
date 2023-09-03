@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+body{
+    background-color: #d8d8d8;
+}
+.black{
+    color: #000;
+}
+.white{
+    color: white;
+}
+.gray{
+    color:#b3b3b3;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+.margin-left{
+    margin-left: 20px;
+}
+button{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+.orange-button{
+    background-color: lightcoral;
+}
+.gray-button{
+    background-color: gray;
+}
+input{
+    border: 1px solid black;
+    width: 99%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.input{
+    width: 100%;
+}
+header{
+    background: url(assets/london.jpg);
+    height: 800px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    width: 100%;
+    color: orangered;
+    font-size: 22px;
+}
+
+.travel{
+    background-color: white;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.travel-options{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.icon-travel{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+.icon-travel:hover{
+    background-color: orangered;
+}
+.travel-form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap:20px
+}
+main{
+    padding:0px 9% 0px 9%;
+}
+.pictures {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-rows: 250px 250px;
+    gap: 25px;
+    grid-template-areas:
+    "cinqueterre newyork sanfran"
+    "cinqueterre pisa paris"
+    ;
+    margin-top: 20px;
+    gap: 10px;
+}
+.pictures div {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 13px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cinqueterre {
+    grid-area: cinqueterre;
+    background-image: url("assets/cinqueterre.jpg");
+}
+.sanfran {
+    grid-area: sanfran;
+    background-image: url("assets/sanfran.jpg");
+}
+.paris {
+    grid-area: paris;
+    background-image: url("assets/paris.jpg");
+}
+.newyork {
+    grid-area: newyork;
+    background-image: url("assets/newyork.jpg");
+}
+.pisa {
+    grid-area: pisa;
+    background-image: url("assets/pisa.jpg");
+}
+.block-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+.texts{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    background-color: white;
+    color: white;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.box-content{
+    padding: 10px;
+}
+.box-img{
+    width: 100%;
+    height: 300px;
+}
+.block-3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(94, 94, 94);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.block-4{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    color:gray;
+    font-size:10px;
+}
+.footer-icons{
+    font-size:20px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+
+@media(max-width:450px){
+    .pictures{
+        grid-template-areas:
+        "cinqueterre"
+        "newyork"
+        "sanfran"
+        "pisa"
+        "paris"
+        ;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+        grid-template-columns: 12fr;
+    }
+    header{
+        background: url();
+        height: 550px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .travel{
+        height: 420px;
+    }
+}
+
+ 
